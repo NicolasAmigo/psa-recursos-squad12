@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>squad12</groupId>
-	<artifactId>Recursos</artifactId>
+	<artifactId>recursos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Recursos</name>
 	<description>Modulo recursos</description>
