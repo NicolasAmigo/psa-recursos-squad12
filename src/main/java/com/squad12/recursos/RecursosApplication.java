@@ -2,6 +2,7 @@ package com.squad12.recursos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +23,7 @@ public class RecursosApplication {
 		SpringApplication.run(RecursosApplication.class, args);
 	}
 
+	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@GetMapping("/")
 	public String main() {
 		return "Hola Mundo!";
@@ -43,7 +45,6 @@ public class RecursosApplication {
 		}
 		in.close();
 		con.disconnect();
-		System.out.println(content);
 		return content.toString();
 
 	}
