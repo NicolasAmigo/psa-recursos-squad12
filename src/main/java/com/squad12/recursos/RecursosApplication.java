@@ -23,11 +23,6 @@ public class RecursosApplication {
 		SpringApplication.run(RecursosApplication.class, args);
 	}
 
-	@CrossOrigin(origins = "*", allowedHeaders = "*")
-	@GetMapping("/")
-	public String main() {
-		return "Hola Mundo!";
-	}
 	@GetMapping("/recursos")
 	public String getRecursos() throws java.io.IOException{
 
